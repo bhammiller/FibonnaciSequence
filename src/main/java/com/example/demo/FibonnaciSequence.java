@@ -8,15 +8,13 @@ public class FibonnaciSequence {
     */
     ArrayList<Integer> fibonnaci = new ArrayList<>();
     public ArrayList<Integer> fibonnaciScanner(Integer input_number){
-        Integer n=3;
         fibonnaci.add(input_number-3);
         fibonnaci.add(input_number-2);
         fibonnaci.add(input_number-1);
-        fibonnaci.add(input_number-0);
-        while (fibonnaci.get(n) <100000){
+        fibonnaci.add(input_number);
+        for (int n=3;fibonnaci.get(n) <100000;++n){
             fibonnaci.add(fibonnaci.get(n)+fibonnaci.get(n-1)+fibonnaci.get(n-2)
                     +fibonnaci.get(n-3));
-            n = n+1;
 
         }
 

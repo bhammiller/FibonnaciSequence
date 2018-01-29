@@ -10,12 +10,15 @@ import java.util.ArrayList;
 public class MainController {
     @RequestMapping ("/")
     public ArrayList fibonnaciSequencing(@RequestParam("number") Integer input_number) {
+        /*if (input_number < 4){
+            return result = "Please Try again with a anumber less than 4";
+            }*/
         FibonnaciSequence fibonnaciSequence = new FibonnaciSequence();
         ArrayList result = fibonnaciSequence.fibonnaciScanner(input_number);
         return result;
         /*
-        if (input_number >10)
-            answer_display = "Please Try again with a anumber less than ten";
+        if (input_number <4)
+            answer_display = "Please Try again with a anumber less than 4";
             */
     }
     }

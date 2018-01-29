@@ -9,9 +9,9 @@ import java.util.ArrayList;
 @RestController
 public class MainController {
     @RequestMapping ("/")
-    public int[] fibonnaciSequencing(@RequestParam("number") int input_number) {
+    public ArrayList fibonnaciSequencing(@RequestParam("number") Integer input_number) {
         FibonnaciSequence fibonnaciSequence = new FibonnaciSequence();
-        int[] result = fibonnaciSequence.fibonnaciScanner(input_number);
+        ArrayList result = fibonnaciSequence.fibonnaciScanner(input_number);
         return result;
         /*
         if (input_number >10)
